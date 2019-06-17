@@ -14,7 +14,7 @@
         <div id="content" role="main">
           <!-- TODO: Content goes here -->
           <header>
-            <img src="logo.png">
+            <img src="logo.png" alt="logo">
             <h1>HTML Elements</h1>
             <hr>
             <nav>
@@ -28,7 +28,7 @@
             <hr>
           </header>
           <main>
-            <section id="home">
+            <div id="home">
               <p>
                 Lorem ipsum dolor sit amet,
                 <a href=#>test link</a>
@@ -41,7 +41,7 @@
                 Water is H<sub>2</sub>O.
                 Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
                 <cite>The New York Times</cite>
-                (That&#8217s a citation).
+                (That&#8217;s a citation).
                 <u>Underline.</u>
                 Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
               </p>
@@ -54,10 +54,10 @@
                 <code>COPY</code>
                 <i>filename.</i>
                 <s>Dinner`s at 5:00.</s>
-                <ins>Let&#8217s make that 7.</ins>
+                <ins>Let&#8217;s make that 7.</ins>
                 This <s>text</s> has been struck.
               </p>
-            </section>
+            </div>
             <hr>
             <section id="headers">
               Pay attention to h1 tag inside section element. Font-size for h1 is the same as font-size for h2,
@@ -101,34 +101,38 @@
               <h2>Unordered Product List</h2>
               <ul>
                 <li>Eggs</li>
-                <li>Meat</li>
-                <ul>
-                  <li>Chicken</li>
-                  <li>Beef</li>
-                  <li>Pork</li>
-                </ul>
+                <li>Meat
+                  <ul>
+                    <li>Chicken</li>
+                    <li>Beef</li>
+                    <li>Pork</li>
+                  </ul>
+                </li>
                 <li>Milk</li>
               </ul>
               <h2>Ordered TODO List</h2>
               <ol>
                 <li>Relax</li>
-                <li>Finish homework</li>
-                <ol type="A">
-                  <li>Analyze requirements</li>
-                  <li>Create HTML page</li>
-                  <li>Upload to GitHub</li>
-                </ol>
+                <li>Finish homework
+                  <ol>
+                    <li>Analyze requirements</li>
+                    <li>Create HTML page</li>
+                    <li>Upload to GitHub</li>
+                  </ol>
+                </li>
                 <li>Enjoy your day</li>
               </ol>
               <h3>Definition List</h3>
-              <dt>HTML</dt>
-              <dd>HTML is the standard markup language for Web pages</dd>
-              <dt>CSS</dt>
-              <dd>CSS describes how HTML elements are to be displayed</dd>
-              <dt>JavaScript</dt>
-              <dd>JavaScript is the Programming Language for the Web</dd>
-                <lable for="select">Select option</lable>
-                <select id="select" name="select">
+              <dl>
+                <dt>HTML</dt>
+                <dd>HTML is the standard markup language for Web pages</dd>
+                <dt>CSS</dt>
+                <dd>CSS describes how HTML elements are to be displayed</dd>
+                <dt>JavaScript</dt>
+                <dd>JavaScript is the Programming Language for the Web</dd>
+              </dl>
+                <label for="selection">Select option</label>
+                <select id="selection" name="select">
                   <option value="html">HTML</option>
                   <option value="css">CSS</option>
                   <option value="js">JavaScript</option>
@@ -149,7 +153,7 @@
             </section>
             <section id="blockquotes">
               <h2>Blockquotes</h2>
-              <p>Let&#8217s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
+              <p>Let&#8217;s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
               <blockquote>
                 "If you go back a few hundred years, what we take for granted today would seem like magic-being able
                 to talk to people over long distances, to transmit images, flying, accessing vast amounts of data
@@ -158,7 +162,7 @@
               </blockquote>
             </section>
             <hr>
-            <form action="" method="get">
+            <form action="#" method="get">
               <label for="first_name">First name:</label>
               <input type="text" id="first_name" name="first name" required>
               <br>
@@ -171,7 +175,7 @@
               <label for="password">Password:</label>
               <input type="password" id="password" name="pass" minlength="8" required>
               <br>
-              <textarea rows="5" cols="30" name="text"></textarea>
+              <textarea rows="5" cols="30" name="textarea"></textarea>
               <br>
               <button type="submit">Submit</button>
             </form>
