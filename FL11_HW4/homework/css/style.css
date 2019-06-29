@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    position: relative;
+    color: #fff;
+}
+
+header img {
+    position: relative;
+    top: -20px;
+    width: 100%;
+    z-index: -1;
+}
+
+.nav_bar {
+    position: absolute;
+	top: 5%;
+	width: 100%;
+}
+
+.logo {
+    padding-left: 4%;
+	width: 25%;
+    font-size: 1.25vw;
+    color: #fff;
+    text-decoration: none;
+    word-spacing: 0.2em;
+}
+
+nav {
+    position: relative;
+    display:flex;
+    float: right;
+}
+
+nav a {
+    padding-right: 4vw;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25vw;
+}
+
+.main_logo {
+    font-size: 1.5vw;
+	position: absolute;
+	width: 100%;
+	top: 30%;
+	text-align: center;
+}
+
+.main_logo h1 {
+    letter-spacing: 6px;
+    font-weight: lighter;
+}
+
+.main_logo h1 span {
+    font-size: 2.1em;
+}
+
+.main_links {
+    position: absolute;
+	top: 75%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.main_links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2vw;
+    border: 1px solid #fff;
+    padding: 1em 4em;
+}
+
+.diagonal {
+    position: relative;
+    top: -25px;;
+    width: 100%;
+    height: 20vw;
+    display: flex;
+    margin-top: 0;
+    background: linear-gradient(to top right, #F3F3F3 50%, black 50%)
+}
+
+.right_text {
+    flex: 1;
+    order: 2;
+    color: #fff;
+    padding: 3em;
+    font-size: 1vw;
+}
+
+.left_text {
+    flex: 1;
+    order: 1;
+    display: flex;
+    align-self: flex-end;
+    padding: 3em;
+    font-size: 1.5vw;
+}
+
+.main {
+    width: 100%;
+    background: #F3F3F3;
+    position: relative;
+    top: -25px;
+    height: 60vw;
+}
+
+.main_header {
+    text-align: center;
+    font-size: 2vw;
+}
+
+.bottom_info {
+    margin-top: -2.7em;
+}
+
+.info {
+    display: flex;
+    padding: 1em;
+}
+
+.img {
+    flex: 1;
+    position: relative;
+}
+
+.info_text {
+    flex: 1;
+    font-size: 1vw;
+    text-align: center;
+    line-height: 2;
+}
+
+.info_text p {
+    text-align: center;
+    padding-top: 2em;
+    width: 85%;
+}
+
+.top_info .info_text p {
+    float: right;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    height: 25vw;
+}
+
+.like {
+    position: relative;
+    border: 1px #fff solid;
+    color: #fff;
+    font-size: 1.3vw;
+    background: rgba(0, 0, 0, 0.4);
+    float: right;
+    padding: 0.2em 0.5em;
+}
+
+.date {
+    color: #fff;
+    position: relative;
+    font-size: 1.3vw;
+}
+
+.info .like {
+    top: -24vw;
+    right: 1.5vw;
+}
+
+.info .date {
+    top: -3.5vw;
+    left: 1.5vw;
+}
+
+.travel {
+    background: #fff;
+    position: relative;
+    width: 100%;
+}
+
+.countries {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.country {
+    position: relative;
+    width: 17vw;
+    height: 23vw;
+    overflow: hidden;
+}
+
+.country img {
+    height: 100%;
+}
+
+.country .like {
+    top: -22vw;
+    right: 1.4vw;
+}
+
+.country .explore {
+    position: absolute;
+    background: rgba(9, 119, 116, 0.8);
+    border: transparent;
+    color: #fff;
+    font-size: 1.3vw;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    height: 13%;;
+    cursor: pointer;
+}
+
+.country .date {
+    top: -3.5vw;
+    left: 1vw;
+}
+
+.for_btn {
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    position: relative;
+    border: transparent;
+    color: #fff;
+    background: rgb(9, 119, 116);
+    font-size: 1.3vw;
+    padding: 1em 8em;
+    margin: 2em;
+    cursor: pointer;
+}
+
+.subscribe {
+    position: relative;
+    width: 100%;
+    background: #F3F3F3;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.subscribe p {
+    font-size: 1.3vw;
+    padding-right: 5%;
+    padding-left: 2%;
+}
+
+.subscribe form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-right: 2%;
+    margin-top: 0.5em;
+}
+
+form label {
+    font-size: 2vw;
+}
+
+form input {
+    font-size: 1.3vw;
+    margin-left: 1em;
+    margin-right: 0.7em;
+    width: 13%;
+    padding: 0.4em;
+    color: #000;
+    border: 1px solid #000;
+    background: #F3F3F3;
+}
+
+form button {
+    font-size: 1.3vw;
+    font-weight: bold;
+    border: transparent;
+    background: rgb(9, 119, 116);
+    color: #fff;
+    padding: 0.5em;
+    width: 8%;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3vw;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer p {
+    color: #9E9E9E;
+}
+
+.contact {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #000;
+}
