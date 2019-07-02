@@ -87,19 +87,17 @@ section {
   width: 78%;
 }
 
-.post-2 .post-img,
-.post-4 .post-img,
-.post-2 .post-info .info,
-.post-4 .post-info .info {
-  order: 2;
-}
-
 aside {
   width: 20%;
 }
 
 .post, .post-info {
   display: flex;
+}
+
+.post:nth-child(even),
+.post:nth-child(even) .post-info:nth-child(even) {
+	flex-direction: row-reverse;
 }
 
 .post-img, .post-info {
