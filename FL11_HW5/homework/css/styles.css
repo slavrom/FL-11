@@ -1,0 +1,336 @@
+body {
+  font-family: roboto;
+}
+.post-1 {
+	background: #B71757;
+}
+.post-2 {
+	background: #0D7E71;
+}
+.post-3 {
+	background: #b1660e;
+}
+.post-4 {
+	background: #d12767;
+}
+.post-5 {
+	background: #2d95bb;
+}
+
+body {
+  background: #0b192f;
+  margin-left: auto;
+	margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+	color: white;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+}
+
+.btn {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #162B4D;
+  height: 100px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-weight: lighter;
+  margin-left: 30px;
+}
+
+header h1 span {
+  color: #d12767;
+}
+
+nav {
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 70px;
+  height: 100%;
+}
+
+nav a {
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 1.5em;
+  justify-content: center;
+	align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+nav a:hover {
+  background:  #283D5F;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 78%;
+}
+
+.post-2 .post-img,
+.post-4 .post-img,
+.post-2 .post-info .info,
+.post-4 .post-info .info {
+  order: 2;
+}
+
+aside {
+  width: 20%;
+}
+
+.post, .post-info {
+  display: flex;
+}
+
+.post-img, .post-info {
+  flex: 1;
+}
+
+.post-img:hover, 
+.post-info h2:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.post-img img, .sidebar img {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.post-info {
+  justify-content: space-around;
+}
+
+.info {
+  width: 70%;
+}
+
+.date {
+  padding-top: 1em;
+  text-align: center;
+  font-weight: lighter;
+  opacity: 0.4;
+}
+
+.day {
+  font-size: 3vw;
+}
+
+.month {
+  font-size: 1.5vw;
+}
+
+.info h2 {
+  font-weight: lighter;
+  font-size: 3.2vw;
+}
+
+.info p {
+  margin-top: -2em;
+  font-size: 1em;
+  line-height: 1.7;
+  opacity: 0.6;
+}
+
+.post-2 .info,
+.post-4 .info {
+  text-align: right;
+}
+
+.post-5 .info {
+  width: 80%;
+  padding-bottom: 2em;
+}
+
+.post-5 .date {
+  width: 5%;
+  text-align: center;
+}
+
+.sidebar {
+  background: #fff;
+  color: #000;
+}
+
+.sidebar .news {
+  width: 75%;
+  margin: auto;
+  line-height: 1.5;
+  font-size: 1em;
+}
+
+.sidebar h3 {
+  font-size: 1.7em;
+  font-weight: inherit;
+  line-height: 1.3;
+}
+
+.sidebar p {
+  margin-top: -1em;
+  padding-bottom: 15%;
+  opacity: 0.6;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: #162B4D;
+  height: 100px;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.footer-info {
+  opacity: 0.3;
+}
+
+@media (max-width: 1400px) {
+  body {
+    font-family: 'roboto';
+  }
+}
+
+@media (max-width: 768px) {
+
+  body {
+    width: 97%;
+  }
+  
+  nav {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-evenly;
+  }
+
+  .btn {
+    display: block;
+  }
+
+  .btn div {
+    width: 15px;
+    border-top: 1px solid #fff;
+    margin: 5px;
+  }
+
+  header h1 {
+    margin-left: 0px;
+  }
+
+  section {
+    width: 60%;
+  }
+
+  aside {
+    width: 38%;
+  }
+
+  .post {
+    display: block;
+  }
+
+  .post-info {
+    height: 23em;
+    display: block;
+  }
+  
+  .post-5 .date {
+    width: 100%;
+  }
+
+  .info,
+  .post-5 .info {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 0;
+  }
+
+  .post-2 .info,
+  .post-4 .info {
+    text-align: left;
+  }
+
+  .info h2 {
+    font-size: 45px;
+    margin-bottom: 1em;
+  }
+
+  .day {
+    font-size: 3em;
+  }
+
+  .month {
+    font-size: 1.5em;
+  }
+
+  .sidebar .news {
+    width: 85%;
+    padding-bottom: 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    width: 97%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section,
+  aside {
+    width: 100%;
+  }
+
+  .info h2 {
+    font-size: 40px;
+  }
+
+  .info p {
+    font-size: 13px;
+  }
+
+  .post-info {
+    height: 21em;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
