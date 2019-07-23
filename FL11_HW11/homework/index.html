@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TODO Cat List</title>
+  <link rel="stylesheet" href="./assets/material-icons/material-icons.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div id="root">
+    <header>
+      <h1>TODO Cat List</h1>
+    </header>
+  	<form id="form-action">
+  		<input type="text" placeholder="Add new action" id = "text">
+  		<button id="btn-action" disabled><i class="material-icons">add_box</i></button>
+    </form>
+  	<div class="line"></div>
+  	<ul id="myList">
+  		<li class="list-item">
+        <div class="left-side">
+          <input class="check" type="checkbox">
+          <span class="inf">Cat</span>
+          <i class="material-icons pen">edit</i>  				
+        </div>
+        <i class="material-icons delete">delete</i>
+      </li>
+  	</ul>
+  </div>
+  <script src="./src/app.js"></script>
+</body>
+</html>
