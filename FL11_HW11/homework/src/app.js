@@ -1,16 +1,19 @@
 let rootNode = document.getElementById('root');
 
-const maxLi = 10;
+let minLi = 1;
+let maxLi = 10;
 let ul = document.getElementById('myList');
 let del = document.getElementsByClassName('delete');
 let pen = document.getElementsByClassName('pen');
 let addBtn = document.getElementById('btn-action');
 let mainInput = document.getElementById('text');
+let header = document.getElementsByTagName('header');
 
 addBtn.addEventListener('click', addLi);
 ul.addEventListener('click', delLi);
 ul.addEventListener('click', changeText); 
 mainInput.addEventListener('input', onMainInputChange);
+addBtn.addEventListener('click', maxListItem);
 
 function addLi (e) {
     e.preventDefault();
@@ -43,12 +46,14 @@ function addLi (e) {
     li.appendChild(delBtn);
     
     ul.appendChild(li);
+    minLi++;
 }
 
 function delLi (e) {
     if (e.target.classList.contains('delete')) {
         let li = e.target.parentElement;
         ul.removeChild(li);
+        minLi--;
     }
 }
 
@@ -84,5 +89,15 @@ function onMainInputChange (e) {
         addBtn.disabled = false;
     } else {
         addBtn.disabled = true;
+    }
+}
+
+function maxListItem () {
+    if (minLi === maxLi) {
+        addBtn.disabled = true;
+        mainInput.disabled = true;
+    } else {
+        addBtn.disabled = false;
+        mainInput.disabled = false;
     }
 }
